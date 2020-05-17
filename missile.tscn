@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://missile/missile.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="missile" type="KinematicBody2D"]
+position = Vector2( 1000, 500 )
+rotation = 0.0174533
+script = ExtResource( 1 )
+missile_range = 1500
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 1.5708
+texture = ExtResource( 2 )
